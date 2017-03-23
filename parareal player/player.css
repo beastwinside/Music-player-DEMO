@@ -1,0 +1,172 @@
+html,body{margin: 0;padding: 0;position: absolute;
+height: 100%;width: 100%;min-width: 1440px;min-height: 900px;}
+/*链接初始化*/
+a{text-decoration:none;color: #262121;}  
+a:hover{text-decoration:underline}  
+
+.container{width: 80%;height: 80%;position: absolute;
+margin: auto;left: 0;right: 0;background-color:#000000;
+box-shadow: 10px 10px 5px #6A6868;}
+
+header{width: 100%;height: 10%;position: absolute;
+top: 0;background-color:#251818;color: #FFFFFF;text-align: center;
+font-family:华文隶书 ;font-size: 60px;
+}
+.show{height: 80%;width: 80%;position: absolute;top: 10.5%;
+right: 0;background-color: #800921;
+}
+
+.circle{height: 270px;width:270px;border-style: solid;
+border-radius: 50%;background: url(heijiao.png);
+background-size: contain;overflow: hidden;
+position: absolute;position: absolute;top: 5%;
+left: 5%;box-shadow: 0px 0px 30px #090101;
+-webkit-animation-name:x-ircle;
+-webkit-animation-duration:20s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function:linear;
+}
+/*旋转动画*/
+@-webkit-keyframes x-ircle{
+0%{
+/*第一个动画帧开始处*/
+-webkit-transform:rotate(0deg);
+}
+50%{
+/*第二个动画帧开始处*/
+-webkit-transform:rotate(180deg);
+}
+100%{
+/*第三个动画帧开始处*/
+-webkit-transform:rotate(360deg);
+}
+
+}
+
+
+
+
+.circle:hover{height: 300px;width: 300px;
+transition-property: opacity height width ;
+transition-duration: 1.5s;cursor: pointer;}
+
+.circle img{height: 75%;width: 75%;border-radius: 50%;
+background-color: #F93939;position: absolute;
+overflow: hidden;
+top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+
+
+.showright{height: 100%;width: 30%;position: absolute;
+top: 0;right: 0;background-color:#02311F;border-left-style: solid;
+border-width: 10px;overflow: auto;font-family: 幼圆;
+font-size: 18px;text-align: center;color: white;
+border-color: black;
+}
+
+.showdown{height: 40%;width: 70%;position: absolute;
+bottom: 0;background-color: #470E1A;}
+
+.sdu{height: 50%;width: 100%;background-color: #95345F;
+font-family: 幼圆;font-size: 30px;font-weight: bolder;
+text-indent: 1em;position: absolute; bottom: 0;}
+#songname{height: 50%;width: 100%;background-color: black;
+color: white;opacity: 0.9;position: absolute;bottom:32%;} 
+
+.bttt1{height: 100%;width: 70%;background-color: black;
+position: absolute;right: 0;top: 0;
+display: flex;align-items: center;
+justify-content: space-between;}
+
+.bttt1 div{height: 80%;width: 10%;background-color: white;
+margin: 3%;opacity: 0.9;font-size: 15px;text-indent: 0;
+color: #474646;}
+
+.bttt1 div:hover{background-color: red;color: white;
+cursor: pointer;}
+
+
+#author{height: 25%;width: 100%;background-color: white;
+color: black;opacity: 0.9;text-indent: 1.5em;font-size: 20px;
+position: absolute;bottom: 8%;}
+
+.sdd{height: 50%;width: 100%;background-color: #95345F;
+position: absolute;top: 0;font-size: 40px;color: white;
+text-align: center;}
+
+
+footer{width: 100%;height: 10%;position: absolute;
+bottom: 0;background-color: #251818;border-style: solid;}
+.user{width: 20%;height: 100%;background-color: #251818;
+	position: absolute;left: 0;}
+.user .headpic{height: 60px;width: 60px;background-color: black;
+	border-radius: 50%;position: absolute;top: 0;bottom: 0;
+	margin: auto;overflow: hidden;
+}
+
+.user .headpic img{width: 100%;height: 100%;}
+.user .info{height: 88%;width: 70%;background-color: #251818;
+position: absolute;right: 0;top: 0;bottom: 0;margin: auto;
+font-size: 20px;color: white;text-align: center;}
+
+.buts{width: 20%;height: 100%;position: absolute;left: 20%;
+background-color: #1C1C1C;display: flex;justify-content: flex-start;
+align-items: center;}
+
+.buts button{height: 60px;width: 60px;margin-right: 20px;
+border-style: solid;border-color: #150A0A;border-radius: 10%;
+font-family: 幼圆;font-size: 30px;color: #FFFFFF;
+background-color: #FF0000;
+}
+.play{background-image: url(on.png);background-size: cover;}
+.butb{background-image: url(before.png);background-size: cover;}
+.butn{background-image: url(next.png);background-size: cover;}
+
+.buts button:hover{box-shadow: 0 0 30px #6A6666;
+cursor: pointer;}
+
+
+.list{width: 20%;height: 80%;position: absolute;top: 10%;
+left: 0;background-color: #030000;display: flex;
+overflow: auto;flex-wrap: wrap;
+}
+/*设置滑动条样式*/
+::-webkit-scrollbar{
+width: 10px;   
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background-color:#090000;border-radius: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+border-radius: 10px;  
+box-shadow:10px 10px 10px #9D9D9D; 
+background-color: #807D7D; 
+}
+
+
+
+
+
+
+
+
+
+
+/*定义滑动条样式*/
+
+.list div{height: 5%;width: 100%;border-style: solid;
+margin: 0;background-color: #EA6920;
+font-family: 黑体;font-size: 25px;text-align: center;
+}
+.list div:hover{height: 7%;opacity: 1;
+font-size: 30px;background-color: #3E352C;color: white;
+border-color: black;}
+
+
+
+audio{width: 80%;position: absolute;
+bottom: 0;right: 0;margin: 0;padding: 0;z-index: 1;}
+
