@@ -96,4 +96,3 @@ audio.addEventListener("ended",function(){
 // 注意addeventlisner的函数会先放在那里，因此要放在匿名函数中
 // 不然就是在全局作用域执行
 
-alert(gequlist.length);
